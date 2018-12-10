@@ -8,12 +8,14 @@
 
 namespace SemExpert\HelloBar\Block;
 
+use Magento\Cms\Block\Block;
+
 /**
  * Class CMS
  * @package SemExpert\HelloBar\Block
  * @api
  */
-class CMS extends Magento\Cms\Block\Block
+class CMS extends Block
 {
 
 }
