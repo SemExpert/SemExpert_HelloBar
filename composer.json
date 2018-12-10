@@ -1,0 +1,19 @@
+{
+  "name": "semexpert/module-hello-bar",
+  "description": "Adds a hello bar before the header. Content can be managed from backend.",
+  "require": {
+    "php": "~7.0.13|~7.1.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "SemExpert\\HelloBar\\": ""
+    }
+  }
+}
