@@ -24,7 +24,7 @@
         <testsuite name="Code Integrity Tests">
             <directory>testsuite/Magento/Test/Integrity</directory>
             <exclude>testsuite/Magento/Test/Integrity/ComposerTest.php</exclude>
-            <!--<exclude>testsuite/Magento/Test/Integrity/Di/CompilerTest.php</exclude>-->
+            <exclude>testsuite/Magento/Test/Integrity/Di/CompilerTest.php</exclude>
 
             <!--
             Redundant dependencies found!
