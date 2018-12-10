@@ -9,6 +9,10 @@
 namespace SemExpert\HelloBar\Block;
 
 use Magento\Cms\Block\Block;
+use Magento\Cms\Model\BlockFactory;
+use Magento\Cms\Model\Template\FilterProvider;
+use Magento\Framework\View\Element\Context;
+use Magento\Store\Model\StoreManagerInterface;
 
 /**
  * Class CMS
@@ -17,5 +21,29 @@ use Magento\Cms\Block\Block;
  */
 class CMS extends Block
 {
+    /**
+     * Scope config
+     *
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     */
+    protected $scopeConfig;
 
+    public function __construct(
+        Context $context,
+        FilterProvider $filterProvider,
+        StoreManagerInterface $storeManager,
+        BlockFactory $blockFactory,
+        array $data = []
+    ) {
+        parent::__construct($context, $filterProvider, $storeManager, $blockFactory, $data);
+        $this->scopeConfig = $context->getScopeConfig();
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEnabled()
+    {
+
+    }
 }
