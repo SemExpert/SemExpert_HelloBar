@@ -4,7 +4,7 @@ SemExpert_HelloBar adds a container before the default header meant to be used f
 promotional messages.  By default a special block is used that can be managed from store backoffice, but the container
 can also be used to render all kinds of blocks.
 
-[![Build Status](https://travis-ci.org/SemExpert/SemExpert_Hello.svg?branch=master)](https://travis-ci.org/SemExpert/StoreInfoBlocks)
+[![Build Status](https://travis-ci.com/SemExpert/SemExpert_HelloBar.svg?branch=master)](https://travis-ci.com/SemExpert/SemExpert_HelloBar)
 
 ## Getting Started
 
