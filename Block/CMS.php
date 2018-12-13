@@ -21,6 +21,8 @@ use Magento\Store\Model\StoreManagerInterface;
  */
 class CMS extends Block
 {
+    const ENABLED_FLAG_PATH = 'cms/hellobar/enabled';
+
     /**
      * Scope config
      *
@@ -44,6 +46,6 @@ class CMS extends Block
      */
     public function isEnabled()
     {
-
+        return $this->scopeConfig->isSetFlag(self::ENABLED_FLAG_PATH);
     }
 }

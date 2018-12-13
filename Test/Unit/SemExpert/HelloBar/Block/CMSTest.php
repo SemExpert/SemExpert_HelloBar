@@ -67,7 +67,10 @@ class CMSTest extends TestCase
 
     public function testIsDisabledByConfiguration()
     {
-        $this->scopeConfigMock->expects($this->once())->method('isSetFlag')->willReturn(false);
+        $this->scopeConfigMock->expects($this->once())
+            ->method('isSetFlag')
+            ->with(CMS::ENABLED_FLAG_PATH)
+            ->willReturn(false);
         $this->assertFalse($this->block->isEnabled());
     }
 }
